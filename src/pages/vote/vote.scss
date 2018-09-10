@@ -1,0 +1,22 @@
+@import '../../styles/2-tools/index';
+
+page-vote{
+    .vote{
+        &__candidate{
+            &__info{
+                @include layoutFlex();
+                @include alignItems(center);
+                img{
+                    border-radius: 50%;
+                    height: 50px;
+                    width: 50px;
+                    margin-right: 30px;
+                }
+            }
+        }
+        &__submit{
+            @include layoutFlex();
+            @include justifyContent(center);
+        }
+    }  
+}
